@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<meta  http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
+
+<style type="text/css">
+	body{
+		background-image:url('http://www.texturex.com/albums/Wood-Textures/red%20wood%20texture%20grain%20natural%20wooden%20paneling%20surface%20photo%20wallpaper.jpg') ;
+		font-family:Futura;
+		color:white;
+	}
+	#clothes-well{
+		height:400px;
+		margin-top:-20px  ;
+		background-color: rgba(255,255,255,.3); 
+	}
+	#clothes-well-title{
+		margin-top:0px; 
+    	color:white;
+	}
+	#side-well{
+        height:400px;
+		margin-top:-20px  ;
+		background-color: rgba(255,255,255,0); 
+		font-size: 30px;
+	}
+	#clothes-list{
+		background-color: rgba(255,255,255,.3); 
+		height: 200px;
+		margin-top:50px;
+		margin-left:50px;
+		margin-right:50px;
+	}
+	.w3-content{
+
+		height:350px;
+
+	}
+
+
+</style>
+</head>
+<body>
+
+<div' class="container-fluid">
+	<div class="page-header text-center">
+	<h1>
+		Organize your Outfit
+	</h1>
+	</div>
+<div class="row">
+<!-- Shirt Row  -->
+
+<div class="col-xs-2"></div>
+<div class="col-lg-10">
+<div class="row" style="margin-left: 0px;">
+
+ 
+	
+	<div class="well text-center center-block col-md-4" id="side-well">
+    	<p id="clothes-well-title">
+    		<span><u>Shirts</u></span>
+            <div class="well" id="clothes-list">
+
+            
+            	
+            </div>
+
+    	</p>
+	</div>
+ <div class="col-lg-6 well" id="clothes-well">
+ 	
+ 	<!-- Picture Scroller  -->
+           
+     <div class="w3-content w3-display-container">
+
+		<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+
+
+	</div>
+
+            <!-- End Picture Scroller  -->
+
+ </div>
+
+
+</div>
+
+<!-- End Shirt Row  -->
+
+<!-- Pants Row -->
+
+<div class="row" style="margin-left:0px;">
+    
+	<div class="well text-center center-block col-md-4" id="side-well">
+    	<p id="clothes-well-title">
+    		<span><u>Pants</u></span>
+    		<div class="well" id="clothes-list">
+            	
+            </div>
+
+    	</p>
+	</div>
+     <div class="col-lg-6 well" id="clothes-well">
+
+ 	 	<!-- Picture Scroller  -->
+           
+     <div class="w3-content w3-display-container">
+
+		<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+
+
+	</div>
+
+            <!-- End Picture Scroller  -->
+            
+
+     </div>
+
+</div>
+
+<!-- End Pants Row -->
+
+<!-- Shoes Row -->
+
+<div class="row" style="margin-left:0px;">
+    
+	<div class="well text-center center-block col-md-4" id="side-well">
+    	<p id="clothes-well-title">
+    		<span><u>Shoes</u></span>
+    		<div class="well" id="clothes-list">
+            	
+            </div>
+
+    	</p>
+	</div>
+     <div class="col-lg-6 well" id="clothes-well">
+ 		 	<!-- Picture Scroller  -->
+           
+     <div class="w3-content w3-display-container">
+
+		<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+
+
+	</div>
+
+            <!-- End Picture Scroller  -->
+     </div>
+
+</div>
+
+<!-- End Shoes Row -->
+</div>
+</div>
+<div class="col-xs-2"></div>
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+<html>
